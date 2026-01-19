@@ -53,8 +53,13 @@
   border-radius: 4px;
   background: white;
   gap: 1rem;
-  height: 287px;
   align-items: baseline;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 350px;
+  }
 
   &.sin-preferente {
     background-color: #fafafa;
@@ -80,6 +85,12 @@
   text-align: center;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    grid-column: 1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .lista-nombre {
@@ -91,6 +102,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 0.75rem;
+    min-height: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .lista-logo {
@@ -99,6 +116,12 @@
   object-fit: contain;
   margin: 1rem auto;
   display: block;
+
+  @media (max-width: 768px) {
+    max-width: 80px;
+    max-height: 60px;
+    margin: 0.5rem auto;
+  }
 }
 
 .lista-tipo {
@@ -106,6 +129,11 @@
   font-weight: bold;
   margin-top: 0.5rem;
   color: #666;
+
+  @media (max-width: 768px) {
+    font-size: 0.65rem;
+    margin-top: 0.25rem;
+  }
 }
 
 .candidatos-grid {
@@ -115,6 +143,12 @@
   gap: 0.3rem;
   align-items: start;
   align-content: start;
+
+  @media (max-width: 768px) {
+    grid-column: 1;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.25rem;
+  }
 }
 
 .candidato-btn {

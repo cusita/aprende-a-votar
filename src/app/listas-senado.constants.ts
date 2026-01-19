@@ -7,7 +7,7 @@ export interface ListaSenado {
 
 export const LISTAS_SENADO: ListaSenado[] = [
   {
-    nombre: 'PARTIDO DE LA UNIÓN POR LA GENTE – PARTIDO DE LA U',
+    nombre: 'PARTIDO DE LA UNIÓN POR LA GENTE - PARTIDO DE LA U',
     logo: 'assets/images/partido-u.png',
     preferente: true,
     candidatos: [

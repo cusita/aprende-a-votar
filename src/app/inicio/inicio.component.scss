@@ -2,6 +2,11 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  max-height: 250px;
+
+  @media (min-width: 769px) {
+    max-height: 400px;
+  }
 }
 
 .banner-img {
@@ -12,12 +17,19 @@
 }
 
 .container {
-  padding-top: 1rem;
+  padding-bottom: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: white;
+  min-height: calc(100vh - 250px);
+
+  @media (min-width: 769px) {
+    padding: 3rem 2rem;
+    padding-bottom: 150px;
+    min-height: calc(100vh - 400px);
+  }
 }
 
 .titulo {
@@ -40,6 +52,12 @@
   gap: 2rem;
   width: 100%;
   max-width: 500px;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    max-width: 1000px;
+    gap: 3rem;
+  }
 }
 
 .boton-votar {
@@ -51,6 +69,7 @@
   transition: all 0.3s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  flex: 1;
 
   &:hover {
     transform: translateY(-5px);
