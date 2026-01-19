@@ -13,6 +13,7 @@ export class SenadoComponent implements OnInit, OnDestroy {
   listas: ListaSenado[] = LISTAS_SENADO;
   mostrarModal = false;
   mensajeModal = '';
+  esCorrecto = false;
   candidatoSeleccionado: { numero: number; elegido: boolean } | null = null;
 
   constructor(private router: Router) {}
@@ -25,8 +26,10 @@ export class SenadoComponent implements OnInit, OnDestroy {
     
     if (candidato.elegido) {
       this.mensajeModal = '¡Muy bien! Has elegido correctamente.';
+      this.esCorrecto = true;
     } else {
       this.mensajeModal = 'Te equivocaste. Vuelve a intentarlo.';
+      this.esCorrecto = false;
     }
     
     this.mostrarModal = true;
@@ -35,6 +38,7 @@ export class SenadoComponent implements OnInit, OnDestroy {
   onClickListaNoPreferente(lista: ListaSenado) {
     if (!lista.preferente) {
       this.mensajeModal = 'Te equivocaste. Vuelve a intentarlo.';
+      this.esCorrecto = false;
       this.mostrarModal = true;
     }
   }
@@ -48,6 +52,7 @@ export class SenadoComponent implements OnInit, OnDestroy {
   limpiarDatos() {
     this.candidatoSeleccionado = null;
     this.mensajeModal = '';
+    this.esCorrecto = false;
   }
 
   volver() {

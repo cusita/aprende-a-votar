@@ -37,6 +37,8 @@
 
 <div class="modal-overlay" *ngIf="mostrarModal" (click)="cerrarModalYVolver()">
   <div class="modal-content" (click)="$event.stopPropagation()">
+    <img *ngIf="esCorrecto" src="assets/images/check-correct.gif" alt="Correcto" class="modal-gif">
+    <img *ngIf="!esCorrecto" src="assets/images/red-cross.gif" alt="Incorrecto" class="modal-gif">
     <p class="mensaje-modal">{{ mensajeModal }}</p>
     <button class="boton-modal" (click)="cerrarModalYVolver()">Volver al inicio</button>
   </div>
