@@ -17,7 +17,13 @@
         <ng-template #listaNormal>
           <div class="lista-header">
             <h3 class="lista-nombre">{{ lista.nombre }}</h3>
-            <img [src]="lista.logo" [alt]="lista.nombre" class="lista-logo">
+            <div class="logo-container" (click)="onClickLogoPartido(lista, $event)">
+              <img [src]="lista.logo" [alt]="lista.nombre" class="lista-logo">
+              <img *ngIf="mostrarXPartido && partidoSeleccionadoPorLogo === lista" 
+                   src="assets/images/red-cross.gif" 
+                   alt="Marcado" 
+                   class="marca-x-logo">
+            </div>
             <p class="lista-tipo">{{ lista.preferente ? 'PREFERENTE' : 'NO PREFERENTE' }}</p>
           </div>
           
@@ -27,6 +33,10 @@
               class="candidato-btn"
               (click)="onSeleccionarCandidato(candidato, lista); $event.stopPropagation()">
               {{ candidato.numero }}
+              <img *ngIf="candidatoSeleccionado === candidato && mostrarXCandidato" 
+                   src="assets/images/red-cross.gif" 
+                   alt="Marcado" 
+                   class="marca-x-boton">
             </button>
           </div>
         </ng-template>

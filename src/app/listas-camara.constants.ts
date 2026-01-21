@@ -2,6 +2,7 @@ export interface ListaCamara {
   nombre: string;
   logo: string;
   preferente: boolean;
+  elegido: boolean;
   candidatos: Array<{ numero: number; elegido: boolean }>;
 }
 
@@ -10,6 +11,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'CIUDADANOS RENOVEMOS',
     logo: 'assets/images/ciudadanos-renovemos.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -35,6 +37,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'PARTIDO LIBERAL COLOMBIANO',
     logo: 'assets/images/partido-liberal.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -60,6 +63,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'CR-LA U OXÍGENO – CJL-LA LIGA-ASL',
     logo: 'assets/images/oxigeno-liga.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -85,6 +89,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'MOVIMIENTO SALVACIÓN NACIONAL',
     logo: 'assets/images/salvacion-nacional.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -110,6 +115,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'MIRA + DIGNIDAD Y COMPROMISO',
     logo: 'assets/images/mira-dignidad.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -135,12 +141,14 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'MOTOCICLISTAS Y CONDUCTORES UNIDOS POR LA CAUSA',
     logo: 'assets/images/motociclistas.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'MOVIMIENTO AUTORIDADES INDÍGENAS DE COLOMBIA – AICO',
     logo: 'assets/images/aico.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -166,6 +174,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'PARTIDO ALIANZA VERDE',
     logo: 'assets/images/alianza-verde.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -191,6 +200,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'PARTIDO CONSERVADOR COLOMBIANO',
     logo: 'assets/images/partido-conservador.png',
     preferente: true,
+    elegido: true,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: true },
@@ -216,12 +226,14 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'PACTO HISTÓRICO BOGOTÁ',
     logo: 'assets/images/pacto-historico.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'ABC ALIANZA BOGOTÁ CONVERGENTE',
     logo: 'assets/images/abc-alianza.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -247,12 +259,14 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'CON TODA POR BOGOTÁ',
     logo: 'assets/images/con-toda-bogota.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'PARTIDO CENTRO DEMOCRÁTICO',
     logo: 'assets/images/centro-democratico.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -278,6 +292,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'NUESTRA FUERZA',
     logo: 'assets/images/nuestra-fuerza.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -303,6 +318,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'PARTIDO NUEVO LIBERALISMO',
     logo: 'assets/images/nuevo-liberalismo.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 101, elegido: false },
       { numero: 102, elegido: false },
@@ -328,6 +344,7 @@ export const LISTAS_CAMARA: ListaCamara[] = [
     nombre: 'VOTO EN BLANCO',
     logo: 'assets/images/voto-blanco.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
 ];

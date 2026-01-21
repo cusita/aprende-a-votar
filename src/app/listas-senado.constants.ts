@@ -2,6 +2,7 @@ export interface ListaSenado {
   nombre: string;
   logo: string;
   preferente: boolean;
+  elegido: boolean;
   candidatos: Array<{ numero: number; elegido: boolean }>;
 }
 
@@ -10,6 +11,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PARTIDO DE LA UNIÓN POR LA GENTE - PARTIDO DE LA U',
     logo: 'assets/images/partido-u.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -117,6 +119,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'COALICIÓN FUERZA CIUDADANA',
     logo: 'assets/images/fuerza-ciudadana.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -189,6 +192,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PARTIDO CENTRO DEMOCRÁTICO',
     logo: 'assets/images/centro-democratico.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
 
@@ -196,12 +200,14 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PACTO HISTÓRICO SENADO',
     logo: 'assets/images/pacto-historico.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'PARTIDO CONSERVADOR COLOMBIANO',
     logo: 'assets/images/partido-conservador.png',
     preferente: true,
+    elegido: true,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: true },
@@ -309,6 +315,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PARTIDO POLÍTICO OXÍGENO',
     logo: 'assets/images/oxigeno.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
 
@@ -316,18 +323,21 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PATRIOTAS',
     logo: 'assets/images/patriotas.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'LA LISTA DE OVIEDO - CON TODA POR COLOMBIA',
     logo: 'assets/images/lista-oviedo.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'COALICIÓN CAMBIO RADICAL - ALMA',
     logo: 'assets/images/cambio-radical-alma.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -435,6 +445,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'ALIANZA POR COLOMBIA',
     logo: 'assets/images/alianza-verde.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -541,6 +552,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'CREEMOS',
     logo: 'assets/images/creemos.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -571,6 +583,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'MOVIMIENTO SALVACIÓN NACIONAL',
     logo: 'assets/images/salvacion-nacional.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -641,12 +654,14 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'COLOMBIA SEGURA Y PRÓSPERA',
     logo: 'assets/images/colombia-segura-prospera.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
   {
     nombre: 'AHORA COLOMBIA',
     logo: 'assets/images/ahora-colombia.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -753,6 +768,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'FRENTE AMPLIO UNITARIO',
     logo: 'assets/images/frente-amplio.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -857,6 +873,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'PARTIDO LIBERAL COLOMBIANO',
     logo: 'assets/images/partido-liberal.png',
     preferente: true,
+    elegido: false,
     candidatos: [
       { numero: 1, elegido: false },
       { numero: 2, elegido: false },
@@ -964,6 +981,7 @@ export const LISTAS_SENADO: ListaSenado[] = [
     nombre: 'VOTO EN BLANCO',
     logo: 'assets/images/voto-blanco.png',
     preferente: false,
+    elegido: false,
     candidatos: [],
   },
 ];
